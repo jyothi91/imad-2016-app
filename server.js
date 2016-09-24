@@ -24,7 +24,8 @@ var articleone{
                 This is a content of my first article.This is a content of my first article.This is a content of my first article.
                 This is a content of my first article.This is a content of my first article.This is a content of my first article.
                 This is a content of my first article.This is a content of my first article.This is a content of my first article.
-            </p>`
+            </p>`;
+            
 }
 function createtemplate(data){
     var title=data.title;
