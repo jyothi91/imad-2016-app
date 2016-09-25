@@ -82,14 +82,8 @@ app.get('/', function (req, res) {
 });
 
 app.get('/:articlename', function (req, res) {
- res.send(createtemplate(articles[articlename]));
-});
-
-app.get('/article-two', function (req, res) {
-  res.send(createtemplate(articletwo));
-});
-app.get('/article-Three', function (req, res) {
-  res.send(createtemplate(articlethree));
+   var  articlename = req.params.articlename;   
+   res.send(createtemplate(articles[articlename]));
 });
 
 app.get('/ui/style.css', function (req, res) {
