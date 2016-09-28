@@ -1,5 +1,6 @@
 var button = document.getElementById('counter');
 button.onclick = function(){
+    alter('he');
     //create a request to the counter and point
     var request = new XMLHttpRequest();
     //capture the response and store it in a variable
