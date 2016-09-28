@@ -28,7 +28,26 @@ button.onclick = function(){
  var submit = document.getElementById('submit_btn');
  submit.onclick = function(){
      //make a request to the server and send the name
-     
+
+  //create a request to the counter and point
+    var request = new XMLHttpRequest();
+    //capture the response and store it in a variable
+    request.onreadystatechange = function(){
+        if (request.readyState === XMLHttpRequest.DONE )
+        {
+            if(request.status === 200)
+            {
+                var counter = request.responseText;
+                var span = document.getElementById('count');
+                span.innerHTML = counter.toString();
+            }
+        }
+        
+    };
+    
+    //make a request
+    request.open('GET','http://jyothi91.imad.hasura-app.io/counter',true);
+    request.send(null);     
      //capture a list of names and render it as a list
      var names = ['name1','name2','name3','name4'];
      var list = '';
