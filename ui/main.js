@@ -1,5 +1,5 @@
 var button = document.getElementById('counter');
-button.onClick = function(){
+button.onclick = function(){
     alter('he');
     //create a request to the counter and point
     var request = new XMLHttpRequest();
@@ -15,7 +15,7 @@ button.onClick = function(){
             }
         }
         
-    }
+    };
     
     //make a request
     request.open('GET','http://jyothi91.imad.hasura-app.io/counter',true);
