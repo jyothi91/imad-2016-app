@@ -11,6 +11,6 @@ var img=document.getElementById('madi');
    // img.style.marginleft = marginleft + 'px';
 //}
 img.onClick = function(){
-     img.style.marginleft =  '100px';
+     img.style.marginleft =  '200px';
   //  var interval = SetInterval(moveright,100);
 };
