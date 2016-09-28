@@ -37,7 +37,7 @@ button.onclick = function(){
             {
                 
               //capture a list of names and render it as a list
-             var names =request.responseText;
+             var names = request.responseText;
              names = JSON.parse(names);
              var list = '';
              for (var i = 0;i<names.length;i++)
@@ -57,7 +57,7 @@ button.onclick = function(){
     var name = nameInput.value;
 
     //make a request
-    request.open('GET','http://jyothi91.imad.hasura-app.io/submit-name?name '+ name,true);
+    request.open('GET','http://jyothi91.imad.hasura-app.io/submit-name?name= '+ name,true);
     request.send(null);     
 
  };
