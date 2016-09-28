@@ -31,8 +31,6 @@ var articles={
         title:'Article two Jyothi',
         heading:'Article two',
         date:'Sep 20 2016',
-eading;
-
         content:`
                    <p>
                     This is a content of my second article.
