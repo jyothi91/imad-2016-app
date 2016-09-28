@@ -1,6 +1,6 @@
 var button = document.getElementById('counter');
 button.onclick = function(){
-    //make a request to the counter and point
+    //create a request to the counter and point
     var request = new XMLHttpRequest();
     //capture the response and store it in a variable
     request.onreadystatechange = function(){
@@ -15,4 +15,8 @@ button.onclick = function(){
         }
         
     }
+    
+    //make a request
+    request.open('GET',"http://jyothi91.imad.hasura-app.io/",true);
+    request.send(null);
   };
