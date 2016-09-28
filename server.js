@@ -1,4 +1,24 @@
-var express = require('express');
+        content:`
+                   <p>
+                    This is a content of my second article.
+                </p>`
+    } ,
+    'article-three' : {
+        title:'Article three Jyothi',
+        heading:'Article three',
+        date:'Sep 25 2016',
+        content:`
+                <p>
+                    This is a content of my third article.This is a content of my third article.This is a content of my third article.
+                </p>`
+    }            
+    
+
+};
+function createtemplate(data){
+    var title=data.title;
+    var date=data.date;
+    var heading=data.hvar express = require('express');
 var morgan = require('morgan');
 var path = require('path');
 
@@ -31,27 +51,7 @@ var articles={
         title:'Article two Jyothi',
         heading:'Article two',
         date:'Sep 20 2016',
-        content:`
-                   <p>
-                    This is a content of my second article.
-                </p>`
-    } ,
-    'article-three' : {
-        title:'Article three Jyothi',
-        heading:'Article three',
-        date:'Sep 25 2016',
-        content:`
-                <p>
-                    This is a content of my third article.This is a content of my third article.This is a content of my third article.
-                </p>`
-    }            
-    
-
-};
-function createtemplate(data){
-    var title=data.title;
-    var date=data.date;
-    var heading=data.heading;
+eading;
     var content=data.content;
     var htmltemplate=`<html>
         <head>
