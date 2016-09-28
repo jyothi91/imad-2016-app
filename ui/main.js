@@ -1,5 +1,5 @@
 var button = document.getElementById('counter');
-button.onclick = function(){
+button.onClick = function(){
     alter('he');
     //create a request to the counter and point
     var request = new XMLHttpRequest();
