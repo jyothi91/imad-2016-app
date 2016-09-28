@@ -10,7 +10,7 @@ var img = document.getElementById('madi');
  //   marginleft =marginleft + 10;
    // img.style.marginleft = marginleft + 'px';
 //}
-img.onClick = function(){
+img.onclick = function(){
      img.style.marginleft =  '100px';
      alert('hi');
   //  var interval = SetInterval(moveright,100);
