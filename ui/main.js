@@ -53,7 +53,7 @@ button.onclick = function(){
     };
     
     //make a request
-    request.open('GET','http://jyothi91.imad.hasura-app.io/counter',true);
+    request.open('GET','http://jyothi91.imad.hasura-app.io/submit-name?name '+ name,true);
     request.send(null);     
 
  };
