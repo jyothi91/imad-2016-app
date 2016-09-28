@@ -1,3 +1,10 @@
+var express = require('express');
+var morgan = require('morgan');
+var path = require('path');
+
+var app = express();
+app.use(morgan('combined'));
+
         content:`
                    <p>
                     This is a content of my second article.
@@ -18,12 +25,10 @@
 function createtemplate(data){
     var title=data.title;
     var date=data.date;
-    var heading=data.hvar express = require('express');
-var morgan = require('morgan');
-var path = require('path');
+    var heading=data.h
 
-var app = express();
-app.use(morgan('combined'));
+
+
 
 var articles={
     'article-one' : {
