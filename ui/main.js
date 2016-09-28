@@ -12,6 +12,5 @@ var img = document.getElementById('madi');
 //}
 img.onclick = function(){
      img.style.marginleft =  '100px';
-     alert('hi');
-  //  var interval = SetInterval(moveright,100);
+   //  var interval = SetInterval(moveright,100);
 };
