@@ -12,7 +12,7 @@
         
         if (request.readyState === XMLHttpRequest.DONE )
         {
-            
+            alert(request.status)
             if(request.status === 200)
             {
         
