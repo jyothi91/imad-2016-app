@@ -37,7 +37,7 @@
     var name = nameInput.value;
 
     //make a request
-    request.open('GET','http://jyothi91.imad.hasura-app.io/submit-name?name= '+ name,true);
+    request.open('GET','http://http://jyothi91.imad.hasura-app.io/article-one?comment= '+ comment,true);
     request.send(null);     
 
  };
