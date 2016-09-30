@@ -27,6 +27,7 @@
              }
              var ul = document.getElementById('commentlist');
              ul.innerHTML = list;
+             alert(list);
                     }
         } 
         
@@ -34,7 +35,7 @@
     
     var commentInput = document.getElementById('comment');
     var comment = commentInput.value;
-    alert(comment);
+    
     //make a request
     request.open('GET','http://jyothi91.imad.hasura-app.io/article-one?comment= '+ comment,true);
     request.send(null);     
