@@ -22,7 +22,7 @@
              //alert(commets);
              commets = JSON.parse(commets);
              var list = '';
-            // alert(commets);
+            alert(commets);
              for (var i = 0;i<commets.length;i++)
              {
                  
