@@ -15,6 +15,7 @@
             
             if(request.status === 200)
             {
+        
               //capture a list of names and render it as a list
              var commets = request.responseText;
              commets = JSON.parse(commets);
