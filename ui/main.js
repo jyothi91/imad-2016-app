@@ -10,10 +10,11 @@
     //capture the response and store it in a variable
     request.onreadystatechange = function(){
       
-        alert(XMLHttpRequest.DONE);
+        
         if (request.readyState === XMLHttpRequest.DONE )
         {
            //alert('list');  
+           alert(request.status);
             if(request.status === 200)
             {
         
