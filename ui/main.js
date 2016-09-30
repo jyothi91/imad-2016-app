@@ -39,7 +39,7 @@
         
     };
     
-    var commentInput = document.getElementById('comment');
+    var commentInput = document.getElementById('comment5');
     alert(commentInput.value);
     var comment = commentInput.value;
     
