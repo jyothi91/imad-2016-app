@@ -27,7 +27,7 @@ var submit1 = document.getElementById('submit_btn1');
              {
                  
                  list += '<li>' + commets[i] + '</li>';
-                 alert(commets[i] );
+               //  alert(commets[i] );
                  
              }
              var ul = document.getElementById('commentlist');
