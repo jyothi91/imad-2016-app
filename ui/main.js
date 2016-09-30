@@ -109,7 +109,7 @@ button.onclick = function(){
     
     var nameInput = document.getElementById('name');
     var name = nameInput.value;
-    alert('nameInput' & nameInput.value);
+   // alert('nameInput' & nameInput.value);
     //make a request
     request.open('GET','http://jyothi91.imad.hasura-app.io/submit-name?name= '+ name,true);
     request.send(null);     
