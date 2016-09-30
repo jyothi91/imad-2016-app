@@ -42,7 +42,7 @@
  };
  
 
-var button = document.getElementById('counter');
+/* var button = document.getElementById('counter');
 button.onclick = function(){
    
     //create a request to the counter and point
@@ -104,6 +104,6 @@ button.onclick = function(){
     request.open('GET','http://jyothi91.imad.hasura-app.io/submit-name?name= '+ name,true);
     request.send(null);     
 
- };
+ };*/
  
     
