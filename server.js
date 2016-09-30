@@ -112,17 +112,22 @@ app.get('/submit-name', function (req, res) {
   //  res.send("bharath");
 });
 
-var comments=[];
 app.get('/:articlename', function (req, res) {
    var  articlename = req.params.articlename;   
    
+    res.send( createtemplate(articles[articlename]) );
+   //res.send(createtemplate(articles[articlename]));
+});
+
+var comments=[];
+app.get('/article-one', function (req, res) {
+
    var comment = req.query.comment; //to do
     comments.push(comment);
     //JSON javascript object notation
     //JSON.stringify(comments)
      //res.send(JSON.stringify(comments));
-     var strcomm = JSON.stringify(comments) && createtemplate(articles[articlename]) ;
-    res.send(strcomm );
+    res.send(JSON.stringify(comments) );
    //res.send(createtemplate(articles[articlename]));
 });
 
