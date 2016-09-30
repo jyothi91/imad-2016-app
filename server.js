@@ -111,7 +111,7 @@ app.get('/submit-name', function (req, res) {
 //    res.send(JSON.stringify(names)); //to do
   //  res.send("bharath");
 });
-
+var comments=[];
 app.get('/:articlename', function (req, res) {
    var  articlename = req.params.articlename;   
    
@@ -119,7 +119,7 @@ app.get('/:articlename', function (req, res) {
    //res.send(createtemplate(articles[articlename]));
 });
 
-var comments=[];
+
 app.get('/article-one', function (req, res) {
 
    var comment = req.query.comment; //to do
