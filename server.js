@@ -117,7 +117,7 @@ app.get('/:articlename', function (req, res) {
    var  articlename = req.params.articlename;   
 
    var commentstr = req.query.commentstr; //to do
-   comments.push("test");
+   comments.push("?commentstr=test");
 
    var strcomm =     JSON.stringify(comments) 
     var artstr =  createtemplate(articles[articlename]) 
