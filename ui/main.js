@@ -9,7 +9,7 @@
     var request = new XMLHttpRequest();
     //capture the response and store it in a variable
     request.onreadystatechange = function(){
-       // alert('list');
+       alert('list');
         
         if (request.readyState === XMLHttpRequest.DONE )
         {
@@ -22,7 +22,7 @@
              //alert(commets);
              commets = JSON.parse(commets);
              var list = '';
-            alert(commets);
+            //alert(commets);
              for (var i = 0;i<commets.length;i++)
              {
                  
