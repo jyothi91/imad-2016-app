@@ -1,3 +1,10 @@
+
+  // submit name
+ var submit1 = document.getElementById('submit_btn1');
+ submit1.onclick = function(){
+     //make a request to the server and send the name
+ alert('This is article one');
+};
 var button = document.getElementById('counter');
 button.onclick = function(){
    
@@ -64,10 +71,10 @@ button.onclick = function(){
  
     
   // submit name
- var submit1 = document.getElementById('submit_btn1');
- submit1.onclick = function(){
+ //var submit1 = document.getElementById('submit_btn1');
+ //submit1.onclick = function(){
      //make a request to the server and send the name
- alert('This is article one');
+ //alert('This is article one');
   //create a request to the counter and point
   /*  var request = new XMLHttpRequest();
     //capture the response and store it in a variable
@@ -101,5 +108,5 @@ button.onclick = function(){
     //request.open('GET','http://jyothi91.imad.hasura-app.io/submit-name?name= '+ name,true);
     //request.send(null);     
 
- };
+// };
  
