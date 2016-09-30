@@ -34,8 +34,8 @@
         
     };
     
-    var nameInput = document.getElementById('name');
-    var name = nameInput.value;
+    var commentInput = document.getElementById('comment');
+    var comment = commentInput.value;
 
     //make a request
     request.open('GET','http://jyothi91.imad.hasura-app.io/article-one?comment= '+ comment,true);
