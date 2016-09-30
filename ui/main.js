@@ -4,7 +4,7 @@
  var submit1 = document.getElementById('submit_btn1');
  submit1.onclick = function(){
      //make a request to the server and send the name
- alert('This is article one');
+ 
   //create a request to the counter and point
     var request = new XMLHttpRequest();
     //capture the response and store it in a variable
@@ -13,7 +13,7 @@
         {
             if(request.status === 200)
             {
-                
+                alert('This is article one');
               //capture a list of names and render it as a list
              var commets = request.responseText;
              commets = JSON.parse(commets);
