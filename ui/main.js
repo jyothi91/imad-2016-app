@@ -40,6 +40,7 @@
     };
     
     var commentInput = document.getElementById('comment');
+    alert(commentInput.value);
     var comment = commentInput.value;
     
     //make a request
