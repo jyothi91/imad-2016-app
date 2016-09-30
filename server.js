@@ -25,7 +25,8 @@ var articles={
                     This is a content of my first article.This is a content of my first article.This is a content of my first article.
                     This is a content of my first article.This is a content of my first article.This is a content of my first article.
                     This is a content of my first article.This is a content of my first article.This is a content of my first article.
-                </p>`
+                </p>`,
+                
     },
     'article-two' : {
         title:'Article two Jyothi',
@@ -71,7 +72,13 @@ function createtemplate(data){
                 <h3>${heading};</h3>
                 <div>${date};</div>
                 ${content};
-            </div>
+            <hr/>
+            <br/>
+            <input type= "text" id="comment" placeholder = "comment" id = 'name'></input>
+            <input type = "submit" value = "Submit" id = 'submit_btn'></input>
+            <ul id = 'namelist'>
+            </ul>
+           </div>
         </body>
         
     </html>
