@@ -15,11 +15,12 @@
             
             if(request.status === 200)
             {
-        alert(request.responseText);
+        
               //capture a list of names and render it as a list
              var commets = request.responseText;
              commets = JSON.parse(commets);
              var list = '';
+             alert(commets.length);
              for (var i = 0;i<commets.length;i++)
              {
                  
