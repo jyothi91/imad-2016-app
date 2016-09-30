@@ -14,13 +14,13 @@
         if (request.readyState === XMLHttpRequest.DONE )
         {
            //alert('list');  
-           alert(request.status);
+           //alert(request.status);
             if(request.status === 200)
             {
         
               //capture a list of names and render it as a list
              var commets = request.responseText;
-             //alert(commets);
+             alert(request.responseText);
              commets = JSON.parse(commets);
              var list = '';
             //alert(commets);
