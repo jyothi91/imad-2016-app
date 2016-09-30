@@ -92,6 +92,7 @@ button.onclick = function(){
             
              names = JSON.parse(names);
              var list = '';
+             alert(names.length);
              for (var i = 0;i<names.length;i++)
              {
                  
@@ -101,7 +102,7 @@ button.onclick = function(){
              }
              var ul = document.getElementById('namelist');
              ul.innerHTML = list;
-              alert(ul.innerHTML);
+              //alert(ul.innerHTML);
                     }
         }
         
