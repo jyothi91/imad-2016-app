@@ -4,13 +4,13 @@
  var submit1 = document.getElementById('submit_btn1');
  submit1.onclick = function(){
      //make a request to the server and send the name
- 
+ alert('first');
   //create a request to the counter and point
     var request = new XMLHttpRequest();
     //capture the response and store it in a variable
     request.onreadystatechange = function(){
       
-        
+        alert('third');       
         if (request.readyState === XMLHttpRequest.DONE )
         {
            //alert('list');  
