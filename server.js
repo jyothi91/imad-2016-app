@@ -116,8 +116,8 @@ var comments=[];
 app.get('/:articlename', function (req, res) {
    var  articlename = req.params.articlename;   
 
-   var comment = req.query.comments; //to do
-    comments.push(comment);
+   var comment1 = req.query.comment; //to do
+    comments.push(comment1);
 
     var strcomm =     JSON.stringify(comments) 
     var artstr =  createtemplate(articles[articlename]) 
