@@ -118,8 +118,9 @@ app.get('/:articlename', function (req, res) {
     comments.push(comment);
     //JSON javascript object notation
     //JSON.stringify(comments)
-     res.send(JSON.stringify(comments));
-    res.send( createtemplate(articles[articlename]));
+     //res.send(JSON.stringify(comments));
+     var strcomm = JSON.stringify(comments) & createtemplate(articles[articlename]) 
+    res.send(strcomm );
    //res.send(createtemplate(articles[articlename]));
 });
 
