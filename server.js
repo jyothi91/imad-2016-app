@@ -107,8 +107,15 @@ app.get('/submit-name', function (req, res) {
     res.send(JSON.stringify(names)); //to do
 });
 
+var comments=[];
 app.get('/:articlename', function (req, res) {
    var  articlename = req.params.articlename;   
+   
+   var comment = req.query.comment; //to do
+    comments.push(comment);
+    //JSON javascript object notation
+    alert(JSON.stringify(comments)); //to do
+
    res.send(createtemplate(articles[articlename]));
 });
 
