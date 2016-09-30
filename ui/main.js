@@ -9,6 +9,7 @@
     var request = new XMLHttpRequest();
     //capture the response and store it in a variable
     request.onreadystatechange = function(){
+        alert('list');
         
         if (request.readyState === XMLHttpRequest.DONE )
         {
