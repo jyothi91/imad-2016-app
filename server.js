@@ -98,7 +98,7 @@ app.get('/counter', function (req, res) {
   res.send(counter.toString());
 });
 
-var names=[];
+/*var names=[];
 app.get('/submit-name', function (req, res) {
     //get the name from the request
     var name = req.query.name; //to do
@@ -111,7 +111,7 @@ app.get('/submit-name', function (req, res) {
 //    res.send(JSON.stringify(names)); //to do
   //  res.send("bharath");
 });
-
+*/
 var comments=[];
 app.get('/:articlename?commentstr =', function (req, res) {
    var  articlename = req.params.articlename;   
