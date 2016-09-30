@@ -113,7 +113,7 @@ app.get('/submit-name', function (req, res) {
 });
 */
 var comments=[];
-app.get('/:articlename?commentstr =', function (req, res) {
+app.get('/:articlename', function (req, res) {
    var  articlename = req.params.articlename;   
 
    var commentstr = req.query.commentstr; //to do
@@ -121,7 +121,7 @@ app.get('/:articlename?commentstr =', function (req, res) {
 
    var strcomm =     JSON.stringify(comments) 
     var artstr =  createtemplate(articles[articlename]) 
-    res.send(    artstr & strcomm );
+    res.send(    artstr );
    //res.send(createtemplate(articles[articlename]));
 });
 
