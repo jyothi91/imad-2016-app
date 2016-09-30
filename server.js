@@ -74,14 +74,10 @@ function createtemplate(data){
                 ${content};
             <hr/>
             <br/>
-            <script>
-                if (${heading} === 'Article one')
-                {
-                    <input type= "text" id="comment" placeholder = "comment" ></input>
-                    <input type = "submit" value = "Submit" id = 'submit_btn'></input>
-                    <ul id = 'commentlist'>
-                    </ul>
-                }
+            <input type= "text" id="comment" placeholder = "comment" ></input>
+            <input type = "submit" value = "Submit" id = 'submit_btn'></input>
+            <ul id = 'commentlist'>
+            </ul>
             </script>
            </div>
         </body>
