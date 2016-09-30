@@ -112,24 +112,27 @@ app.get('/submit-name', function (req, res) {
   //  res.send("bharath");
 });
 
+var comments=[];
 app.get('/:articlename', function (req, res) {
    var  articlename = req.params.articlename;   
-   
-    res.send( createtemplate(articles[articlename]) );
-   //res.send(createtemplate(articles[articlename]));
-});
-
-var comments=[];
-app.get('/article-one', function (req, res) {
 
    var comment = req.query.comment; //to do
     comments.push(comment);
+
+    var strcomm = createtemplate(articles[articlename]) &&    JSON.stringify(comments)
+    res.send(  strcomm);
+   //res.send(createtemplate(articles[articlename]));
+});
+
+
+//app.get('/article-one', function (req, res) {
+
     //JSON javascript object notation
     //JSON.stringify(comments)
      //res.send(JSON.stringify(comments));
-    res.send(JSON.stringify(comments) );
+  //  res.send(JSON.stringify(comments) );
    //res.send(createtemplate(articles[articlename]));
-});
+//});
 
 app.get('/ui/style.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'style.css'));
