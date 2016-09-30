@@ -19,14 +19,15 @@ var submit1 = document.getElementById('submit_btn1');
         
               //capture a list of names and render it as a list
              var commets = request.responseText;
-             alert(commets);
+             //alert(commets);
              commets = JSON.parse(commets);
              var list = '';
-             alert(commets.length);
+             //alert(commets.length);
              for (var i = 0;i<commets.length;i++)
              {
                  
                  list += '<li>' + commets[i] + '</li>';
+                 alert(commets[i] );
                  
              }
              var ul = document.getElementById('commentlist');
