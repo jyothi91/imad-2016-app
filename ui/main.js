@@ -8,9 +8,9 @@
   //create a request to the counter and point
     var request = new XMLHttpRequest();
     //capture the response and store it in a variable
-    
+    alert(request.readyState);
     request.onreadystatechange = function(){
-        alert(request.readyState);
+        
         if (request.readyState === XMLHttpRequest.DONE )
         {
             alert('test');
