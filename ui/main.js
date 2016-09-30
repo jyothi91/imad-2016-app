@@ -13,6 +13,7 @@
         
         if (request.readyState === XMLHttpRequest.DONE )
         {
+            alert('test');
             if(request.status === 200)
             {
                 
