@@ -93,6 +93,7 @@ button.onclick = function(){
              {
                  
                  list += '<li>' + names[i] + '</li>';
+                 alert(names[i]);
                  
              }
              var ul = document.getElementById('namelist');
