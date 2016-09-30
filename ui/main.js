@@ -64,7 +64,7 @@ button.onclick = function(){
  
  
   // submit name
- var submit1 = document.getElementById('submit_btn');
+ var submit1 = document.getElementById('submit_btn1');
  submit1.onclick = function(){
      //make a request to the server and send the name
     alert('This is article one');
