@@ -116,7 +116,7 @@ var comments=[];
 app.get('/:articlename', function (req, res) {
    var  articlename = req.params.articlename;   
 
-   var comment1 = req.query.comment; //to do
+   var comment1 = req.query.comment1; //to do
     comments.push(comment1);
 
     var strcomm =     JSON.stringify(comments) 
