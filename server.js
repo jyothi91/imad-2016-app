@@ -106,7 +106,9 @@ app.get('/submit-name', function (req, res) {
     names.push(name);
    // alert(JSON.stringify(names));
     //JSON javascript object notation
-    res.send(JSON.stringify(names)); //to do
+    var test = JSON.stringify(names)
+     res.send(test); 
+//    res.send(JSON.stringify(names)); //to do
   //  res.send("bharath");
 });
 
