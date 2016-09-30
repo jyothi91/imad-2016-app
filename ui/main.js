@@ -12,9 +12,10 @@
         
         if (request.readyState === XMLHttpRequest.DONE )
         {
-            alert(request.readyState);
+            
             if(request.status === 200)
             {
+                alert(request.status);
                 
               //capture a list of names and render it as a list
              var commets = request.responseText;
