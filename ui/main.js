@@ -19,6 +19,7 @@ var submit1 = document.getElementById('submit_btn1');
         
               //capture a list of names and render it as a list
              var commets = request.responseText;
+             alert(commets);
              commets = JSON.parse(commets);
              var list = '';
              alert(commets.length);
@@ -30,7 +31,7 @@ var submit1 = document.getElementById('submit_btn1');
              }
              var ul = document.getElementById('commentlist');
              ul.innerHTML = list;
-             alert('list');
+             
                     }
         } 
         
