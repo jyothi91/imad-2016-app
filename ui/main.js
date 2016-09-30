@@ -10,7 +10,7 @@
     //capture the response and store it in a variable
     
     request.onreadystatechange = function(){
-        
+        alert(request.readyState);
         if (request.readyState === XMLHttpRequest.DONE )
         {
             alert('test');
