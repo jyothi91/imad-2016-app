@@ -27,7 +27,7 @@
              }
              var ul = document.getElementById('commentlist');
              ul.innerHTML = list;
-             alert(list);
+             alert('list');
                     }
         } 
         
