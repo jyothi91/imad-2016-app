@@ -113,7 +113,7 @@ app.get('/submit-name', function (req, res) {
 });
 
 var comments=[];
-app.get('/:articlename', function (req, res) {
+app.get('/:articlename?comment1=', function (req, res) {
    var  articlename = req.params.articlename;   
 
    var comment1 = req.query.comment1; //to do
