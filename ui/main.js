@@ -1,7 +1,7 @@
 
 
   // submit name
-/* var submit1 = document.getElementById('submit_btn1');
+var submit1 = document.getElementById('submit_btn1');
  submit1.onclick = function(){
      //make a request to the server and send the name
  
@@ -45,7 +45,7 @@
     request.open('GET','http://jyothi91.imad.hasura-app.io/article-one?comment= '+ comment,true);
     request.send(null);     
 
- };*/
+ };
  
 
 /* var button = document.getElementById('counter');
@@ -71,7 +71,7 @@ button.onclick = function(){
     request.open('GET','http://jyothi91.imad.hasura-app.io/counter',true);
     request.send(null);
   };
-  */
+  
   
  // submit name
  var submit = document.getElementById('submit_btn');
@@ -116,5 +116,5 @@ button.onclick = function(){
     request.send(null);     
 
  };
- 
+ */
     
