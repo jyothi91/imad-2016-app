@@ -107,7 +107,7 @@ app.get('/submit-name', function (req, res) {
    // alert(JSON.stringify(names));
     //JSON javascript object notation
     //res.send(JSON.stringify(names)); //to do
-    res.send('bharath');
+    res.send("bharath");
 });
 
 var comments=[];
