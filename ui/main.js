@@ -92,7 +92,7 @@ button.onclick = function(){
                     }
         } */
         
-    };
+   // };
     
     //var nameInput = document.getElementById('name');
     //var name = nameInput.value;
