@@ -47,7 +47,7 @@
     //xhttp.open("GET", "demo_get2.asp?fname=Henry&lname=Ford", true);
     
     request.open('GET','http://jyothi91.imad.hasura-app.io?comment= '+ comment,true);
-    request.send(null);     
+   // request.send(null);     
 
  };
  
