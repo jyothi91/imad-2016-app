@@ -119,8 +119,9 @@ app.get('/:articlename', function (req, res) {
    var comment = req.query.comment; //to do
     comments.push(comment);
 
-    var strcomm =     JSON.stringify(comments) && createtemplate(articles[articlename]) 
-    res.send(  strcomm);
+    var strcomm =     JSON.stringify(comments) 
+    var artstr =  createtemplate(articles[articlename]) 
+    res.send(  strcomm && artstr);
    //res.send(createtemplate(articles[articlename]));
 });
 
