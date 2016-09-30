@@ -38,7 +38,7 @@
     var comment = commentInput.value;
     
     //make a request
-    request.open('GET','http://jyothi91.imad.hasura-app.io/article-one?comment= '+ comment,true);
+    request.open('GET','http://jyothi91.imad.hasura-app.io/article-one',true);
     request.send(null);     
 
  };
