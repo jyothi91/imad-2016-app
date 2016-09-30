@@ -41,12 +41,12 @@
     
     var commentInput = document.getElementById('comment5');
     alert(commentInput.value);
-    var comment = commentInput.value;
+    var commentstr = commentInput.value;
     
     //make a request
     //xhttp.open("GET", "demo_get2.asp?fname=Henry&lname=Ford", true);
     
-    request.open('GET','http://jyothi91.imad.hasura-app.io?comment= '+ comment,true);
+    request.open('GET','http://jyothi91.imad.hasura-app.io?commentstr= '+ commentstr,true);
    // request.send(null);     
 
  };
