@@ -52,11 +52,18 @@ var articles={
 };
 
 function createtemplate(data){
-    var title=data.title;
-    var date=data.date;
-    var heading=data.heading;
-    var content=data.content;
-    var htmltemplate=`<html>
+    var title='';
+    var date='';
+    var heading='';
+    var content='';
+    var htmltemplate='';
+
+    
+    title=data.title;
+    date=data.date;
+    heading=data.heading;
+    content=data.content;
+    htmltemplate=`<html>
         <head>
             <title>
                 ${title};
