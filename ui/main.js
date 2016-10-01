@@ -20,7 +20,9 @@
         
               //capture a list of names and render it as a list
              var comments = request.responseText;
+             
              alert('request status 200');
+             alert(request.responseText);
              comments = JSON.parse(comments);
              var list = '';
             //alert(comments);
