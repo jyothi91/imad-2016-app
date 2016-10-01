@@ -19,16 +19,16 @@
             {
         
               //capture a list of names and render it as a list
-             var commets = request.responseText;
+             var comments = request.responseText;
              alert(request.responseText);
-             commets = JSON.parse(commets);
+             comments = JSON.parse(comments);
              var list = '';
-            //alert(commets);
-             for (var i = 0;i<commets.length;i++)
+            //alert(comments);
+             for (var i = 0;i<comments.length;i++)
              {
                  
-                 list += '<li>' + commets[i] + '</li>';
-               //  alert(commets[i] );
+                 list += '<li>' + comments[i] + '</li>';
+               //  alert(comments[i] );
                  
              }
              var ul = document.getElementById('commentlist');
