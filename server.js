@@ -122,12 +122,12 @@ app.get('/:articlename', function (req, res) {
 
    var strcomm =     JSON.stringify(comments) ;
     var artstr =  createtemplate(articles[articlename]) ;
-    res.send(  artstr && strcomm );
+    res.send(    strcomm && artstr );
    //res.send(createtemplate(articles[articlename]));
 });
 
 
-//app.get('/article-one', function (req, res) {
+//app.get('/article-one', function (req,  r es) {
 
     //JSON javascript object notation
     //JSON.stringify(comments)
