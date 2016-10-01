@@ -20,15 +20,15 @@
         
               //capture a list of names and render it as a list
              var comments = request.responseQuery;
-             
+             alert(request.responseQuery)
             alert('request status 200');
             // alert(comments);
              //comments = JSON.parse(comments);
              comments = ['test','test2'];
              //alert(comments);
              var list = '';
-            alert(comments.length);
-            alert('test');
+            //alert(comments.length);
+            //alert('test');
              for (var i = 0;i<comments.length;i++)
              {
                  
