@@ -1,7 +1,7 @@
 
 
   // submit name
- var submit1 = document.getElementById('submit_btn1');
+ var submit1 = document.getElementById('submit_btn5');
  submit1.onclick = function(){
      //make a request to the server and send the name
  alert('first');
