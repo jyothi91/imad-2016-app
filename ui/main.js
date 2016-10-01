@@ -22,9 +22,9 @@
              var comments = request.responseText;
              
             alert('request status 200');
-             //alert(comments);
-             comments = JSON.parse(comments);
              alert(comments);
+             comments = JSON.parse(comments);
+             //alert(comments);
              var list = '';
             //alert(comments);
              for (var i = 0;i<comments.length;i++)
