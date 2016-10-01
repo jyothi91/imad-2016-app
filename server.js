@@ -76,7 +76,7 @@ function createtemplate(data){
             <hr/>
             <br/>
             <input type= "text" id="comment5" placeholder = "comment" ></input>
-            <input type = "submit" value = "Submit" id = 'submit_btn1'></input>
+            <input type = "submit" value = "Submit" id = 'submit_btn5'></input>
             <ul id = 'commentlist'>
             </ul>
            </div>
