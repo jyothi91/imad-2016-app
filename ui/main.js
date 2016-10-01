@@ -49,7 +49,7 @@
     //make a request
     //xhttp.open("GET", "demo_get2.asp?fname=Henry&lname=Ford", true);
     
-    request.open('GET','http://jyothi91.imad.hasura-app.io/article1name-one?commentstr= '+ commentstr,true);
+    request.open('GET','http://jyothi91.imad.hasura-app.io/article-one?commentstr= '+ commentstr,true);
     request.send(null);     
    // alert ('http://jyothi91.imad.hasura-app.io/article1-one?commentstr= ' && commentstr );
 
