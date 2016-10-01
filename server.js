@@ -6,28 +6,8 @@ var app = express();
 app.use(morgan('combined'));
 
 var articles={       
-        title:'Article one Jyothi',
-        heading:'Article one',
-        date:'Sep 5 2016',
-        content:`
-                   <p>
-                    This is a content of my first article.This is a content of my first article.This is a content of my first article.
-                    This is a content of my first article.This is a content of my first article.This is a content of my first article.
-                    This is a content of my first article.This is a content of my first article.This is a content of my first article.
-                </p>
-                <p>
-                    This is a content of my first article.This is a content of my first article.This is a content of my first article.
-                    This is a content of my first article.This is a content of my first article.This is a content of my first article.
-                    This is a content of my first article.This is a content of my first article.This is a content of my first article.
-                </p>
-                <p>
-                    This is a content of my first article.This is a content of my first article.This is a content of my first article.
-                    This is a content of my first article.This is a content of my first article.This is a content of my first article.
-                    This is a content of my first article.This is a content of my first article.This is a content of my first article.
-                </p>`,
-       
-    
- /*   'article-one' : {
+ 
+    'article-one' : {
         title:'Article one Jyothi',
         heading:'Article one',
         date:'Sep 5 2016',
@@ -66,7 +46,7 @@ var articles={
                 <p>
                     This is a content of my third article.This is a content of my third article.This is a content of my third article.
                 </p>`
-    }            */
+    }            
     
 
 };
@@ -142,7 +122,7 @@ app.get('/:articlename', function (req, res) {
 
    var strcomm =     JSON.stringify(comments) ;
     var artstr =  createtemplate(articles[articlename]) ;
-    res.send(  artstr );
+    res.send(  artstr && strcomm );
    //res.send(createtemplate(articles[articlename]));
 });
 
