@@ -1,7 +1,7 @@
 
 
   // submit name
- /*var submit1 = document.getElementById('submit_btn5');
+ var submit1 = document.getElementById('submit_btn5');
  submit1.onclick = function(){
      //make a request to the server and send the name
  //alert('first');
@@ -80,7 +80,7 @@ button.onclick = function(){
     request.send(null);
   };
   
- */
+ 
  // submit name
  var submit = document.getElementById('submit_btn');
  submit.onclick = function(){
@@ -125,4 +125,4 @@ button.onclick = function(){
 
  };
  
-    
+    */
