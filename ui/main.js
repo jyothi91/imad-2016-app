@@ -28,6 +28,7 @@
              //alert(comments);
              var list = '';
             alert(comments.length);
+            alert('test');
              for (var i = 0;i<comments.length;i++)
              {
                  
