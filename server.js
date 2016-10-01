@@ -29,6 +29,29 @@ var articles={
                 </p>`,
                 
     },
+          'article1name-one' : {
+        title:'Article one Jyothi',
+        heading:'Article one',
+        date:'Sep 5 2016',
+        content:`
+                   <p>
+                    This is a content of my first article.This is a content of my first article.This is a content of my first article.
+                    This is a content of my first article.This is a content of my first article.This is a content of my first article.
+                    This is a content of my first article.This is a content of my first article.This is a content of my first article.
+                </p>
+                <p>
+                    This is a content of my first article.This is a content of my first article.This is a content of my first article.
+                    This is a content of my first article.This is a content of my first article.This is a content of my first article.
+                    This is a content of my first article.This is a content of my first article.This is a content of my first article.
+                </p>
+                <p>
+                    This is a content of my first article.This is a content of my first article.This is a content of my first article.
+                    This is a content of my first article.This is a content of my first article.This is a content of my first article.
+                    This is a content of my first article.This is a content of my first article.This is a content of my first article.
+                </p>`,
+                
+    },
+
     'article-two' : {
         title:'Article two Jyothi',
         heading:'Article two',
