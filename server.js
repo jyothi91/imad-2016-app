@@ -133,6 +133,7 @@ app.get('/article11-one', function (req,  res) {
     //JSON javascript object notation
     //JSON.stringify(comments)
      //res.send(JSON.stringify(comments));
+     print (strcomm);
    res.send(strcomm );
    //res.send(createtemplate(articles[articlename]));
 });
