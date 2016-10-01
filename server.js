@@ -52,7 +52,7 @@ var articles={
 };
 
 function createtemplate(data){
-    var cstr = "test"
+    var cstr = 'test';
     var title=data.title;
     var date=data.date;
     var heading=data.heading;
