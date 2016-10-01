@@ -14,7 +14,7 @@
         if (request.readyState === XMLHttpRequest.DONE )
         {
            //alert('list');  
-           alert(request.responseText );
+          // alert(request.responseText );
             if(request.status === 200)
             {
         
@@ -22,12 +22,12 @@
              var comments = request.responseText;
              
             alert('request status 200');
-             alert(comments);
+            // alert(comments);
              comments = JSON.parse(comments);
              comments = ['test','test2'];
              //alert(comments);
              var list = '';
-            //alert(comments);
+            alert(comments.length);
              for (var i = 0;i<comments.length;i++)
              {
                  
