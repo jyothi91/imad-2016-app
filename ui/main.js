@@ -14,7 +14,7 @@
         if (request.readyState === XMLHttpRequest.DONE )
         {
            //alert('list');  
-           alert(request.responseURL);
+           alert(request.responseXML );
             if(request.status === 200)
             {
         
