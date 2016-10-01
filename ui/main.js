@@ -4,23 +4,23 @@
  var submit1 = document.getElementById('submit_btn5');
  submit1.onclick = function(){
      //make a request to the server and send the name
- alert('first');
+ //alert('first');
   //create a request to the counter and point
     var request = new XMLHttpRequest();
     //capture the response and store it in a variable
     request.onreadystatechange = function(){
       
-        alert('third');       
+   //     alert('third');       
         if (request.readyState === XMLHttpRequest.DONE )
         {
            //alert('list');  
-           alert(request.responseText);
+           //alert(request.responseText);
             if(request.status === 200)
             {
         
               //capture a list of names and render it as a list
              var comments = request.responseText;
-             alert(request.responseText);
+             alert('request status 200');
              comments = JSON.parse(comments);
              var list = '';
             //alert(comments);
@@ -40,7 +40,7 @@
     };
     
     var commentInput = document.getElementById('comment5');
-    alert(commentInput.value);
+    //alert(commentInput.value);
     var commentstr = commentInput.value;
     
     //make a request
@@ -48,7 +48,7 @@
     
     request.open('GET','http://jyothi91.imad.hasura-app.io/article1-one?commentstr= '+ commentstr,true);
     request.send(null);     
-    alert ('http://jyothi91.imad.hasura-app.io/article1-one?commentstr= ' && commentstr );
+   // alert ('http://jyothi91.imad.hasura-app.io/article1-one?commentstr= ' && commentstr );
 
  };
  
