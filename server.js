@@ -150,8 +150,8 @@ app.get('/:articlename', function (req, res) {
     var strcomm =     JSON.stringify(comments) ;
 
 //   var strcomm =     JSON.stringify(comments) ;
-    var artstr =  createtemplate(articles[articlename]) ;
-    res.send(  strcomm &&   artstr );
+    var artstr =  createtemplate(articles[strcomm && articlename]) ;
+    res.send(   artstr );
    //res.send(createtemplate(articles[articlename]));
 });
 
