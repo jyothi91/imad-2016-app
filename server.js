@@ -125,7 +125,7 @@ app.get('/:articlename', function (req, res) {
 });
 
 var comments=[];
-app.get('/article11-one', function (req,  res) {
+app.get('/article1name-one', function (req,  res) {
 
    var commentstr = req.query.commentstr; //to do
    comments.push(commentstr);
