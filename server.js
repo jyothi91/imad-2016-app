@@ -99,7 +99,7 @@ app.get('/counter', function (req, res) {
   res.send(counter.toString());
 });
 
-var names=[];
+/*var names=[];
 app.get('/submit-name', function (req, res) {
     //get the name from the request
     var name = req.query.name; //to do
@@ -111,7 +111,7 @@ app.get('/submit-name', function (req, res) {
      res.send(test); 
 //    res.send(JSON.stringify(names)); //to do
   //  res.send("bharath");
-});
+});*/
 
 
 app.get('/:articlename', function (req, res) {
@@ -124,7 +124,7 @@ app.get('/:articlename', function (req, res) {
    //res.send(createtemplate(articles[articlename]));
 });
 
-/*var comments=[];
+var comments=[];
 app.get('/article11-one', function (req,  res) {
 
    var commentstr = req.query.commentstr; //to do
@@ -136,7 +136,7 @@ app.get('/article11-one', function (req,  res) {
 //     print (strcomm);
    res.send(strcomm );
    //res.send(createtemplate(articles[articlename]));
-});*/
+});
 
 app.get('/ui/style.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'style.css'));
