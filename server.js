@@ -86,7 +86,7 @@ function createtemplate(data){
         
     </html>
     `;
-    return 'god' ;
+    return htmltemplate ;
 }
 
 
