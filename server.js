@@ -66,9 +66,6 @@ function createtemplate(data){
         </head>
         <body>
             <div class = "container">
-                <div>
-                    <a href="/">Home</a>
-                </div>
                 <hr/>
                 <h3>${heading};</h3>
                 <div>${date};</div>
