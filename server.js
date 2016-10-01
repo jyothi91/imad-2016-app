@@ -116,7 +116,7 @@ app.get('/submit-name', function (req, res) {
 
 app.get('/:articlename', function (req, res) {
    var  articlename = req.params.articlename;   
-
+    articlename = "article-one"
 
 //   var strcomm =     JSON.stringify(comments) ;
     var artstr =  createtemplate(articles[articlename]) ;
