@@ -48,7 +48,7 @@
     
     request.open('GET','http://jyothi91.imad.hasura-app.io/article1-one?commentstr= '+ commentstr,true);
     request.send(null);     
-    alert ('last' );
+    alert ('http://jyothi91.imad.hasura-app.io/article1-one?commentstr= ' && commentstr );
 
  };
  
