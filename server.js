@@ -24,7 +24,7 @@ var articles={
                     This is a content of my first article.This is a content of my first article.This is a content of my first article.
                     This is a content of my first article.This is a content of my first article.This is a content of my first article.
                     This is a content of my first article.This is a content of my first article.This is a content of my first article.
-                </p>`,
+                </p>`
 
 
 /*      'article-one' : {
