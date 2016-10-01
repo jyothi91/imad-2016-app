@@ -24,6 +24,7 @@
             alert('request status 200');
              alert(comments);
              comments = JSON.parse(comments);
+             comments = ['test','test2'];
              //alert(comments);
              var list = '';
             //alert(comments);
