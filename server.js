@@ -114,7 +114,7 @@ app.get('/submit-name', function (req, res) {
 });*/
 
 
-app.get('/:articlename', function (req, res) {
+/*app.get('/:articlename', function (req, res) {
    var  articlename = req.params.articlename;   
     articlename = "article-one"
 
@@ -122,7 +122,7 @@ app.get('/:articlename', function (req, res) {
     var artstr =  createtemplate(articles[articlename]) ;
     res.send(     artstr );
    //res.send(createtemplate(articles[articlename]));
-});
+});*/
 
 var comments=[];
 app.get('/article1name-one', function (req,  res) {
