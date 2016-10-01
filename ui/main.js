@@ -19,7 +19,7 @@
             {
         
               //capture a list of names and render it as a list
-             var comments = request.responseText;
+             var comments = request.responseQuery;
              
             alert('request status 200');
             // alert(comments);
