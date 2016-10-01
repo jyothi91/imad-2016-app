@@ -6,7 +6,12 @@ var app = express();
 app.use(morgan('combined'));
 
 var articles={       
- 
+
+        title:'',
+        heading:'',
+        date:'',
+        content:'';
+
     'article-one' : {
         title:'Article one Jyothi',
         heading:'Article one',
@@ -46,7 +51,7 @@ var articles={
                 <p>
                     This is a content of my third article.This is a content of my third article.This is a content of my third article.
                 </p>`
-    }            
+    }
     
 
 };
@@ -133,7 +138,7 @@ app.get('/article11-one', function (req,  res) {
     //JSON javascript object notation
     //JSON.stringify(comments)
      //res.send(JSON.stringify(comments));
-     print (strcomm);
+//     print (strcomm);
    res.send(strcomm );
    //res.send(createtemplate(articles[articlename]));
 });
