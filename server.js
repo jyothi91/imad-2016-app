@@ -122,7 +122,7 @@ app.get('/:articlename', function (req, res) {
 
 //   var strcomm =     JSON.stringify(comments) ;
     var artstr =  createtemplate(articles[articlename]) ;
-    var strcomm =     JSON.stringify(artstr && comments ) ;
+    var strcomm =     JSON.stringify(comments ) ;
 
     res.send(  artstr  );
    //res.send(createtemplate(articles[articlename]));
