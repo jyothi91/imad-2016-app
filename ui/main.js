@@ -19,8 +19,8 @@
             {
         
               //capture a list of names and render it as a list
-             var comments = request.responseXML;
-             alert(request.responseXML)
+             var comments = request.responsetext;
+             alert(request.responsetext);
             alert('request status 200');
             // alert(comments);
              //comments = JSON.parse(comments);
