@@ -136,7 +136,7 @@ app.get('/submit-name', function (req, res) {
   //  res.send("bharath");
 });*/
 
-var comments=[];
+//var comments=[];
 app.get('/articles/:articlename', function (req, res) {
   //var  articlename = req.params.articlename;   
 
