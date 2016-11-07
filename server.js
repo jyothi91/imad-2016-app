@@ -138,10 +138,10 @@ app.get('/submit-name', function (req, res) {
 
 var comments=[];
 app.get('/articles/:articlename', function (req, res) {
-   var  articlename = req.params.articlename;   
+  //var  articlename = req.params.articlename;   
 
-   var commentstr = req.query.commentstr; //to do
-   comments.push(commentstr);
+  // var commentstr = req.query.commentstr; //to do
+   //comments.push(commentstr);
     
     pool.query("SELECT * FROM article WHERE title = " + req.params.articlename ,function(err,result){
             if (err){
@@ -155,7 +155,7 @@ app.get('/articles/:articlename', function (req, res) {
                }
                else
                {
-                    var articleData = result.rows(0);
+                    var articleData = result.rows[0];
                     res.send(createtemplate(articleData));
                }
            }
@@ -163,10 +163,10 @@ app.get('/articles/:articlename', function (req, res) {
   //  var articledata = 
 //   var strcomm =     JSON.stringify(comments) ;
    // var artstr =  createtemplate(articles[articlename]) ;
-    var artstr =  createtemplate(articledata) ;
-    var strcomm =     JSON.stringify(comments ) ;
+//    var artstr =  createtemplate(articledata) ;
+  //  var strcomm =     JSON.stringify(comments ) ;
 
-    res.send(  artstr  );
+    //res.send(  artstr  );
    //res.send(createtemplate(articles[articlename]));
 });
 
